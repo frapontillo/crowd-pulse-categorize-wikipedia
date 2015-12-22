@@ -58,6 +58,10 @@ public class WikipediaTagCategorizer extends IPlugin<Message, Message, VoidConfi
         return PLUGIN_NAME;
     }
 
+    @Override public IPlugin<Message, Message, VoidConfig> getInstance() {
+        return new WikipediaTagCategorizer();
+    }
+
     @Override public VoidConfig getNewParameter() {
         return new VoidConfig();
     }
